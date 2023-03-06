@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body *{
+	box-sizing: border-box;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main{
+	width: 100vw;
+	height: 100vh;
+	background: #201b2c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.formulario{
+    width: 70vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.formulario h1{
+    color: #00ff88;
+	font-weight: 800;
+	margin: 0;
+}
+.corpo{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 60%;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 35px;
+	background: #2f2841;
+	border-radius: 20px;
+	box-shadow: 0px 10px 40px #00000056;
+}
+.corpo h3{
+    color: #00ff88;
+	font-weight: 800;
+	margin: 5px 0;
+    text-transform: uppercase;
+}
+.textfield{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 5px 0;
+}
+.textfield2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 5px 0px;
+}
+
+.textfield > input,.textfield2 >input{
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	background: #514869;
+	color: #f0ffffde;
+	font-size: 12pt;
+	box-shadow: 0px 10px 40px #00000056;
+	outline: none;
+	box-sizing: border-box;
+}
+.textfield2 >input{
+    border-radius: 10px 0 0 10px;
+}
+
+.textfield > label, .textfield2 > label{
+	color: #f0ffffde;
+	margin-bottom: 10px;
+}
+
+.textfield >input::placeholder, .textfield2 >input::placeholder{
+	color: #f0ffff94;
+}
+.enviar{
+    width: 30%;
+	padding: 16px 0px;
+	margin: 25px;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+	color: #2b134b;
+	background: #00ff88;
+	cursor: pointer;
+	box-shadow: 0px 10px 20px -12px #00ff8052;
+}
+.enviar:hover{
+    background: #19ff94;
+    color: #2f0666;
+    font-size: 14px;
+}
+.acao{
+    width: 30%;
+    height: 100%;
+	padding: 10px 0px;
+	margin: 0;
+	border-radius: 0 8px 8px 0;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: #2b134b;
+	background: #00ff88;
+	cursor: pointer;
+	box-shadow: 0px 10px 20px -12px #00ff8038;
+}
+.acao:hover{
+    background: #19ff94;
+    color: #2f0666;
+    font-size: 14px;
+}
+.sair{
+    width: 30%;
+	padding: 12px 0px;
+	margin: 15px auto;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+	color: #ffffff;
+	background: #8a8787;
+	cursor: pointer;
+	box-shadow: 0px 10px 20px -12px #8a87874d;
+}
+.sair:hover{
+    background: #999797;
+    box-shadow: 0px 10px 20px -12px #ffffff4d;
+}
+.jvn{
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    color: #f0ffff1f;
+    translate: -50%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 1380px){
+	.corpo{
+		width: 85%;
+	}
+    .formulario{
+		width: 55%;
+		height: auto;
+	}
+    .jvn{
+        letter-spacing: 2px;  
+        font-size: 16px;
+    }
+    .enviar{
+        width: 30%;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    .acao{
+        width: 30%;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 1220px){
+	.main{
+		flex-direction: column;
+	}
+    .formulario{
+		width: 75%;
+		height: auto;
+	}
+	.corpo{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.main{
+		flex-direction: column;
+	}
+	.formulario{
+		width: 100%;
+		height: auto;
+	}
+	.corpo{
+		width: 90%;
+	}
+    .jvn{
+        letter-spacing: 1px;  
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px){
+	.main{
+		flex-direction: column;
+	}
+	.formulario{
+		width: 100%;
+		height: auto;
+	}
+	.corpo{
+		width: 90%;
+	}
+    .jvn{
+        letter-spacing: 1px;  
+        font-size: 10px;
+    }
+    .enviar{
+        width: 30%;
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+    .acao{
+        width: 30%;
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+    .sair{
+        width: 50%;
+        letter-spacing: 1px;
+        color: #ffffff;
+        background: #8a8787;
+        cursor: pointer;
+        box-shadow: 0px 10px 20px -12px #8a87874d;
+    }
+}
