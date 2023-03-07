@@ -175,6 +175,8 @@ input::-webkit-inner-spin-button {
     letter-spacing: 3px;
 }
 
+/* MEDIA WIDTH */
+
 @media only screen and (max-width: 1380px){
 	.corpo{
 		width: 85%;
@@ -260,4 +262,68 @@ input::-webkit-inner-spin-button {
         cursor: pointer;
         box-shadow: 0px 10px 20px -12px #8a87874d;
     }
+}
+
+
+/* MEDIA HEIGHT */
+
+@media only screen and (max-height: 700px){
+	h1{
+		text-transform: uppercase;
+		font-weight: 1000;
+		letter-spacing: 2px;
+		font-size: 38px;
+	}
+	h2{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.corpo{
+		height: 80vh;
+	}
+    .formulario{
+		height: 80vh;
+	}
+	.jvn{
+        bottom: 4%;
+    }
+
+}
+@media only screen and (max-height: 520px){
+	h1{
+		text-transform: uppercase;
+		font-weight: 1000;
+		letter-spacing: 2px;
+		font-size: 32px;
+	}
+	h2{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 20px;
+		margin: 0;
+	}
+	.corpo{
+		height: 80vh;
+	}
+    .formulario{
+		height: 80vh;
+	}
+	.jvn{
+        bottom: 2%;
+    }
+	.sair{
+        width: 40%;
+		padding: 7px;
+		font-size: 10px;
+    }
+	.textfield2{
+		height: 2em;
+		margin: 5px 0px;
+	}
+	.textfield > input,.textfield2 >input{
+		height: 2em;
+		border-radius: 10px 0 0 10px;
+	}
+
 }
